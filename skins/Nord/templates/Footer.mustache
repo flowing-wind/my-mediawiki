@@ -1,0 +1,15 @@
+<footer class="nord-footer" aria-label="Site information">
+  {{#data-footer}}
+    {{#data-info}}<ul class="nord-footer-info">{{#array-items}}<li id="{{name}}">{{{html}}}</li>{{/array-items}}</ul>{{/data-info}}
+    {{#data-places}}<nav aria-label="Site links"><ul class="nord-footer-links">{{#array-items}}<li id="{{name}}">{{{html}}}</li>{{/array-items}}</ul></nav>{{/data-places}}
+  {{/data-footer}}
+  <div class="nord-colophon">
+    <span>© 2026 Fuuraiko <span class="nord-colophon-dot" aria-hidden="true">·</span> <a class="nord-license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener" aria-label="Creative Commons Attribution-NonCommercial 4.0" title="Original content: CC BY-NC 4.0; exceptions are explained in Copyright"><span>CC BY-NC 4.0</span></a></span>
+    <span class="nord-footer-credit">Nord <span aria-hidden="true">·</span> <a href="https://www.mediawiki.org/" target="_blank" rel="noopener">Powered by MediaWiki ↗</a></span>
+  </div>
+  <ul class="nord-registrations" aria-label="备案与网站联萌">
+    <li><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">沪ICP备2025133897号-1</a></li>
+    <li><a href="https://beian.mps.gov.cn/#/query/webSearch?code=31011702890762" target="_blank" rel="noopener">沪公网安备31011702890762号</a></li>
+    <li><a class="nord-moe-registration" href="https://icp.gov.moe/?keyword=20254590" target="_blank" rel="noopener" title="萌备 · 萌友网站联萌"><span class="nord-moe-icon" aria-hidden="true">&#xe900;</span>萌ICP备20254590号</a></li>
+  </ul>
+</footer>

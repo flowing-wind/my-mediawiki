@@ -1,0 +1,53 @@
+<a class="nord-skip" href="#content">{{msg-nord-skip}}</a>
+<div class="nord-progress" aria-hidden="true"></div>
+<button class="nord-scrim" aria-label="{{msg-nord-close}}" tabindex="-1" hidden></button>
+<aside class="nord-sidebar" id="nord-navigation">
+  <a class="nord-brand" href="{{link-mainpage}}" aria-label="{{msg-sitetitle}}">
+    <span class="nord-mark" aria-hidden="true"></span>
+    <span>{{msg-sitetitle}}<small>{{msg-nord-subtitle}}</small></span>
+  </a>
+  <div class="nord-sidebar-rule" aria-hidden="true"></div>
+  <div class="nord-navigation">
+    {{#data-portlets-sidebar.data-portlets-first}}{{>Portlet}}{{/data-portlets-sidebar.data-portlets-first}}
+    {{#data-portlets-sidebar.array-portlets-rest}}{{>Portlet}}{{/data-portlets-sidebar.array-portlets-rest}}
+    {{#data-portlets.data-languages}}{{>Portlet}}{{/data-portlets.data-languages}}
+  </div>
+  <div class="nord-sidebar-bottom">
+    {{>SolarSystem}}
+    <p class="nord-cosmic-quote">{{msg-nord-journal}}</p>
+    <div class="nord-palette" role="group" aria-label="Nord color palette"><i style="--swatch:var(--nord0)" title="Nord 0 · #2e3440" aria-label="Nord 0: #2e3440" role="img"></i><i style="--swatch:var(--nord1)" title="Nord 1 · #3b4252" aria-label="Nord 1: #3b4252" role="img"></i><i style="--swatch:var(--nord2)" title="Nord 2 · #434c5e" aria-label="Nord 2: #434c5e" role="img"></i><i style="--swatch:var(--nord3)" title="Nord 3 · #4c566a" aria-label="Nord 3: #4c566a" role="img"></i><i style="--swatch:var(--nord4)" title="Nord 4 · #d8dee9" aria-label="Nord 4: #d8dee9" role="img"></i><i style="--swatch:var(--nord5)" title="Nord 5 · #e5e9f0" aria-label="Nord 5: #e5e9f0" role="img"></i><i style="--swatch:var(--nord6)" title="Nord 6 · #eceff4" aria-label="Nord 6: #eceff4" role="img"></i><i style="--swatch:var(--nord7)" title="Nord 7 · #8fbcbb" aria-label="Nord 7: #8fbcbb" role="img"></i><i style="--swatch:var(--nord8)" title="Nord 8 · #88c0d0" aria-label="Nord 8: #88c0d0" role="img"></i><i style="--swatch:var(--nord9)" title="Nord 9 · #81a1c1" aria-label="Nord 9: #81a1c1" role="img"></i><i style="--swatch:var(--nord10)" title="Nord 10 · #5e81ac" aria-label="Nord 10: #5e81ac" role="img"></i><i style="--swatch:var(--nord11)" title="Nord 11 · #bf616a" aria-label="Nord 11: #bf616a" role="img"></i><i style="--swatch:var(--nord12)" title="Nord 12 · #d08770" aria-label="Nord 12: #d08770" role="img"></i><i style="--swatch:var(--nord13)" title="Nord 13 · #ebcb8b" aria-label="Nord 13: #ebcb8b" role="img"></i><i style="--swatch:var(--nord14)" title="Nord 14 · #a3be8c" aria-label="Nord 14: #a3be8c" role="img"></i><i style="--swatch:var(--nord15)" title="Nord 15 · #b48ead" aria-label="Nord 15: #b48ead" role="img"></i></div>
+  </div>
+</aside>
+<div class="nord-workspace">
+  <header class="nord-topbar">
+    <button class="nord-menu-button nord-icon-button" aria-controls="nord-navigation" aria-expanded="false" aria-label="{{msg-nord-menu}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <div class="nord-location"><a href="{{link-mainpage}}">FuuraikoWiki</a><span>/</span><span>{{{html-title}}}</span></div>
+    {{#data-search-box}}
+    <form action="{{form-action}}" class="nord-search" role="search" aria-keyshortcuts="/" id="searchform">
+      <input type="hidden" name="title" value="{{page-title}}">
+      <button aria-label="{{msg-search}}" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+      {{{html-input}}}<kbd title="{{msg-nord-search-shortcut}}">/</kbd>
+    </form>{{/data-search-box}}
+    <details class="nord-type-menu nord-dropdown"><summary aria-label="{{msg-nord-text-size}}" title="{{msg-nord-text-size}}">Aa</summary><div class="nord-dropdown-panel"><span class="nord-type-heading">{{msg-nord-text-size}}</span><div class="nord-type-options" role="group" aria-label="{{msg-nord-text-size}}"><button type="button" data-text-size="small">{{msg-nord-size-small}}</button><button type="button" data-text-size="standard">{{msg-nord-size-standard}}</button><button type="button" data-text-size="large">{{msg-nord-size-large}}</button></div></div></details>
+    <button class="nord-theme-button nord-icon-button" aria-label="{{msg-nord-theme}}" title="{{msg-nord-theme}}" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg></button>
+    <a class="nord-account-link" href="{{#data-search-box}}{{form-action}}{{/data-search-box}}?title=Special:UserLogin">{{msg-nord-account}}</a>
+  </header>
+  <div class="nord-page-grid">
+    <main id="content" class="mw-body nord-main">
+      <div id="top"></div><div id="siteNotice">{{{html-site-notice}}}</div>
+      <div class="nord-article-topline"><span class="nord-eyebrow"><i></i>Flowing Wind</span></div>
+      <div class="mw-indicators">{{#array-indicators}}<div id="{{id}}" class="mw-indicator">{{{html}}}</div>{{/array-indicators}}</div>
+      {{{html-title-heading}}}
+      <div id="contentSub">{{{html-subtitle}}}</div>{{#html-undelete-link}}<div>{{{.}}}</div>{{/html-undelete-link}}{{{html-user-message}}}
+      <div class="nord-page-actions">{{#data-portlets}}
+        <nav aria-label="{{msg-nord-tools}}"><ul>{{{data-associated-pages.html-items}}}{{{data-views.html-items}}}</ul></nav>
+        {{^data-actions.is-empty}}{{>PageTools}}{{/data-actions.is-empty}}{{#data-actions.is-empty}}{{^data-variants.is-empty}}{{>PageTools}}{{/data-variants.is-empty}}{{/data-actions.is-empty}}
+      {{/data-portlets}}</div>
+      <div id="bodyContent" class="nord-body">{{{html-body-content}}}</div>
+      {{{html-categories}}}{{{html-after-content}}}
+      {{>Footer}}
+    </main>
+    <aside id="nord-outline" class="nord-outline" aria-label="{{msg-nord-contents}}"><div class="nord-outline-sticky"><div class="nord-outline-header"><h2>{{msg-nord-contents}}</h2><div class="nord-outline-controls"><button class="nord-outline-dock nord-icon-button" aria-label="{{msg-nord-dock-contents}}" title="{{msg-nord-dock-contents}}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M15 4v16"/></svg></button><button class="nord-outline-close nord-icon-button" aria-label="{{msg-nord-hide-contents}}" title="{{msg-nord-hide-contents}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="nord-outline-collapse-glyph" d="m9 6 6 6-6 6"/><path class="nord-outline-close-glyph" d="m6 6 12 12M6 18 18 6"/></svg></button></div></div><a class="nord-outline-top" href="#top">{{msg-nord-top}}</a><ol id="nord-toc"></ol><div class="nord-outline-end"><span></span><a href="#top" aria-label="{{msg-nord-top}}">↑</a></div></div></aside>
+  </div>
+</div>
+<button class="nord-contents-fab nord-icon-button" aria-controls="nord-outline" aria-expanded="false" aria-label="{{msg-nord-contents}}" title="{{msg-nord-contents}}" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h1M3 12h1M3 18h1"/></svg></button>

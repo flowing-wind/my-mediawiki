@@ -1,0 +1,19 @@
+/* Footer metadata and navigation share one quiet surface, without internal dividers. */
+@font-face{font-family:"Nord Moe";src:url("fonts/moe.woff") format("woff");font-weight:normal;font-style:normal;font-display:block}
+.skin-nord .catlinks{margin-top:32px;padding:16px 0 0;font-size:13px}
+.skin-nord .catlinks + .nord-footer{margin-top:22px}
+.nord-footer{border-top:1px solid var(--line);margin-top:28px;padding:20px 0 28px;font-size:12px;line-height:1.8}
+.nord-footer .nord-footer-info{margin:0 0 14px}
+.nord-footer-info li{margin:0}
+.nord-footer .nord-footer-links{gap:6px 22px;margin:0 0 14px}
+.nord-colophon{display:flex;justify-content:flex-start;flex-wrap:wrap;align-items:center;gap:8px 48px;margin:0;font-size:12px;letter-spacing:0}
+.nord-colophon > span,.nord-license{display:inline-flex;align-items:center;flex-wrap:wrap;gap:8px}
+.nord-colophon-dot{margin:0 2px}
+.nord-footer .nord-registrations{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;margin:12px 0 0;padding:0;border:0;font-size:12px;line-height:1.8;letter-spacing:0}
+.nord-registrations li{margin:0;padding:0}
+.nord-registrations a{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;text-decoration:none;border:0}
+.nord-footer a:hover{color:var(--link);text-decoration:underline;text-underline-offset:3px}
+.nord-footer a:focus-visible{outline:2px solid var(--nord9);outline-offset:4px;border-radius:2px}
+.nord-moe-icon{font-family:"Nord Moe";font-weight:normal;font-style:normal;font-size:16px;line-height:1;color:var(--link);flex:none}
+@media(max-width:600px){.nord-footer .nord-footer-links{gap:7px 18px}.nord-colophon{gap:10px}.nord-footer .nord-registrations{gap:7px 18px}}
+.nord-footer li:has(> .nord-footer-omit){display:none}

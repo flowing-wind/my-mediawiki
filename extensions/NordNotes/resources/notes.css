@@ -1,0 +1,9 @@
+.nord-language-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.5em .85em;margin:0 0 1.6em;padding:.7em 0;border-block:1px solid var(--line);font-size:.78em;line-height:1.8;color:var(--muted)}
+.nord-language-origin{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.5em .85em;color:var(--ink)}
+.nord-language-kind{color:var(--muted)}
+.nord-language-status{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:0 .25em;padding:.1em .55em;border:1px solid var(--line);border-radius:4px;background:var(--soft)}
+.nord-language-status[data-status="reviewed"]{border-inline-start:3px solid var(--nord14)}
+.nord-language-status[data-status="proofreading"]{border-inline-start:3px solid var(--nord13)}
+.nord-language-status.is-current{outline:1px solid var(--link);outline-offset:2px}
+.nord-language-state{color:var(--muted)}
+.nord-article-section{margin-top:2em}.nord-language-bar a{white-space:normal}

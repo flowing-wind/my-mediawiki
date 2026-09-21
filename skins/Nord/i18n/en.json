@@ -1,0 +1,30 @@
+{
+  "@metadata": {
+    "authors": [
+      "Fuuraiko"
+    ]
+  },
+  "skinname-nord": "Nord",
+  "nord-desc": "A quiet, independent reading skin inspired by the Nordic landscape.",
+  "nord-subtitle": "We are made of star-stuff.",
+  "nord-explore": "Explore",
+  "nord-contents": "On this page",
+  "nord-top": "Overview",
+  "nord-tools": "Page actions",
+  "nord-account": "Account",
+  "nord-theme": "Switch light / dark appearance",
+  "nord-menu": "Open navigation",
+  "nord-close": "Close navigation",
+  "nord-reading": "Flowing Wind",
+  "nord-skip": "Skip to content",
+  "nord-journal": "In the vastness of space and the immensity of time, it is my joy to share a planet and an epoch with YOU.",
+  "nord-search-shortcut": "Press / to focus search; Enter to search",
+  "nord-text-size": "Text size",
+  "nord-size-small": "Small",
+  "nord-size-standard": "Standard",
+  "nord-size-large": "Large",
+  "nord-hide-navigation": "Hide navigation",
+  "nord-show-navigation": "Show navigation",
+  "nord-hide-contents": "Hide contents",
+  "nord-dock-contents": "Dock contents to the right"
+}

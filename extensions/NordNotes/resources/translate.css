@@ -1,0 +1,120 @@
+/* Translate and ULS are opt-in local features. Keep their surfaces in the Nord palette. */
+.skin-nord{--color-base:var(--ink);--color-emphasized:var(--ink);--color-subtle:var(--muted);--color-progressive:var(--link);--background-color-base:var(--paper);--background-color-neutral:var(--surface);--background-color-neutral-subtle:var(--surface);--background-color-interactive:var(--soft);--background-color-interactive-subtle:var(--surface);--background-color-interactive--hover:var(--soft);--border-color-base:var(--line);--border-color-subtle:var(--line);--border-color-interactive:var(--line)}
+.skin-nord :is(.tux-messagelist,.tux-message-item,.tux-message-editor,.tux-message-editor .editcolumn,.tux-message-editor .infocolumn-block,.tux-groupselector,.tux-dropdown-menu,.tux-workflow,.tux-info,.mw-translate-fuzzy,.mw-pt-languages,.mw-pt-translate-header,.uls-menu,.uls-lcd,.uls-language-settings-close-block,.uls-search,.uls-language-settings-dialog){background-color:var(--surface);color:var(--ink);border-color:var(--line)}
+.skin-nord :is(.tux-message-item.translated,.tux-message-item.proofread,.tux-message-item:hover,.tm-suggestion,.in-other-language,.tux-dropdown-menu li:hover,.uls-language-block a:hover){background-color:var(--soft);color:var(--ink)}
+.skin-nord :is(.tux-breadcrumb,.tux-list-source,.tux-list-translation,.tux-message-editor .sourcemessage,.tux-message-editor .infocolumn,.tux-message-editor .message-desc,.tux-message-editor .messagekey,.uls-language-block a,.uls-language-block h3,.mw-pt-languages-label){color:var(--ink)}
+.skin-nord :is(.ext-translate-container,.uls-menu,.mw-special-PageTranslation,.mw-special-MessageGroupStats,.mw-special-Translate,.mw-inputbox-centered) :is(input:not([type=checkbox]):not([type=radio]),textarea,select){background-color:var(--surface);color:var(--ink);border-color:var(--line);box-sizing:border-box;max-width:100%}
+.skin-nord :is(.ext-translate-container,.uls-menu,.mw-special-PageTranslation,.mw-special-MessageGroupStats,.mw-special-Translate,.mw-inputbox-centered) :is(button,.mw-ui-button,input[type=submit]){background-color:var(--soft);color:var(--ink);border:1px solid var(--line);border-radius:4px}
+.skin-nord .tux-message-editor .mw-ui-progressive{background-color:var(--nord10);color:var(--nord6)}
+.skin-nord .tux-message-editor__caret::after{border-right-color:var(--surface)}
+.skin-nord :is(.tux-notice,.tux-highlight){background-color:color-mix(in srgb,var(--nord13) 16%,var(--surface));color:var(--ink)}
+.skin-nord .mw-pt-languages{margin:.5em 0 1.5em;padding:.5em .8em;border:1px solid var(--line);border-radius:4px;font-size:.8em}
+.skin-nord .uls-menu{z-index:120;box-shadow:0 8px 30px #0003}
+.skin-nord .ext-translate-container{font-size:16px;line-height:1.5;max-width:100%}
+.skin-nord .tux-messagelist{max-width:none}
+.skin-nord .mw-inputbox-centered{margin:1em 0;text-align:left}
+.skin-nord .mw-inputbox-centered input{padding:.65em;margin:.2em}
+@media(max-width:650px){.skin-nord .ext-translate-container .row{min-width:0!important}.skin-nord .tux-message-editor .editcolumn{width:100%;padding-right:12px}.skin-nord .tux-message-editor .infocolumn{width:100%;clear:both}.skin-nord .uls-menu{max-width:calc(100vw - 24px);left:12px!important}.skin-nord .mw-inputbox-centered input{width:100%;margin:.3em 0}}
+/* Match Translate's grid-specific selectors, which load after the skin. */
+.skin-nord .grid.ext-translate-container .tux-messagetable-header,
+.skin-nord .grid .tux-message-editor .infocolumn-block,
+.skin-nord .tux-workflow-status,
+.skin-nord .tux-workflow-status-selector,
+.skin-nord .tux-messagetable-footer,
+.skin-nord .tux-messagetable-bottom,
+.skin-nord .tux-editor-navigation,
+.skin-nord .tux-messagetable-loading{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.skin-nord .grid .tux-message-editor .messagekey,
+.skin-nord .tux-message-selector li,
+.skin-nord .tux-workflow-status-selector li,
+.skin-nord .tux-breadcrumb .grouplink,
+.skin-nord .tux-breadcrumb .grouplink.tux-breadcrumb__item--aggregate,
+.skin-nord .tux-languageselector,
+.skin-nord .tux-message-editor .shortcutinfo{color:var(--muted)}
+.skin-nord .tux-message-selector li.selected,
+.skin-nord .tux-message-selector li:hover{color:var(--link)}
+.skin-nord .tux-workflow-status-selector li.changeable:hover{background:var(--soft);color:var(--ink)}
+.skin-nord .tux-workflow-status-triangle::after{border-top-color:var(--ink)}
+.skin-nord .tux-message-editor .messagekey .caret{border-top-color:var(--ink)}
+:root:not([data-nord-theme="light"]) .skin-nord .tux-message-editor :is(.close,.editor-contract,.editor-expand){filter:invert(.85)}
+.skin-nord .grid.ext-translate-container .tux-action-bar{background:var(--surface);border-color:var(--line)}
+.skin-nord .grid.ext-translate-container .tux-message-editor .sourcemessage{font-family:inherit}
+.skin-nord .tux-message-selector li a,.skin-nord .tux-message-selector label,.skin-nord .tux-editor-header{color:var(--muted)}
+.skin-nord .tux-message-selector li.selected a,.skin-nord .tux-message-selector li a:hover{color:var(--link)}
+.skin-nord .tux-messagetable-header{top:79px;z-index:45}
+@media(max-width:850px){.skin-nord .tux-messagetable-header{top:65px}}
+.skin-nord .ext-translate-language-selector{color:var(--muted)}
+:root:not([data-nord-theme="light"]) .skin-nord .ext-translate-language-selector :is(.ext-translate-language-icon,.ext-translate-language-selector-expand){filter:invert(.85)}
+/* The article bar already supplies language links and status; avoid three stacked summaries. */
+.skin-nord:has(.nord-language-bar) .mw-pt-languages,
+.skin-nord.nord-translation-page:has(.nord-language-bar) .mw-pt-translate-header{display:none}
+.skin-nord .uls-lcd-region-title{color:var(--muted)}
+/* Dynamically opened group lists, Page/Review cards and input-method menus. */
+.skin-nord .tux-grouplist,
+.skin-nord .ext-translate-container .tux-messagelist :is(.tux-message-pagemode,.tux-message-proofread) .tux-message-item-compact{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.skin-nord .tux-grouplist__item{border-color:var(--line)}
+.skin-nord .tux-grouplist__item:hover,
+.skin-nord .ext-translate-container .tux-messagelist :is(.tux-message-pagemode,.tux-message-proofread) .tux-message-item-compact:hover,
+.skin-nord .ext-translate-container .tux-messagelist .tux-message-proofread.own-translation .tux-message-item-compact{background:var(--soft)}
+.skin-nord .tux-grouptab,
+.skin-nord .tux-grouplist__item__label,
+.skin-nord .tux-messagelist :is(.tux-pagemode-translation,.tux-proofread-translation){color:var(--ink)}
+.skin-nord .tux-messagelist :is(.tux-pagemode-source,.tux-proofread-source),
+.skin-nord .tux-proofread-count,
+.skin-nord .in-other-language .language{color:var(--muted)}
+.skin-nord .tux-groupselector::before{border-bottom-color:var(--line)}
+.skin-nord .tux-groupselector::after{border-bottom-color:var(--surface)}
+.skin-nord .imeselector{background-color:var(--soft);color:var(--ink);box-shadow:0 1px 4px #0003;border:1px solid var(--line);border-radius:3px}
+.skin-nord .imeselector:hover{background-color:var(--surface);border-top:1px solid var(--line)}
+.skin-nord .imeselector-menu{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.skin-nord .imeselector a,.skin-nord .ime-disable,.skin-nord .imeselector-menu .selectable-row-item{color:var(--ink)}
+.skin-nord .imeselector-menu .ime-help-link,
+.skin-nord .imeselector-menu .ime-help-link>a:hover,
+.skin-nord .imeselector-menu .selectable-row:hover{background-color:var(--soft);color:var(--ink);border-color:var(--line)}
+.skin-nord :is(.ime-list-title,.ime-lang-title){color:var(--link);border-color:var(--line)}
+.skin-nord .ime-disable-shortcut{color:var(--muted)}
+.skin-nord .ime-setting-caret{border-top-color:var(--muted)}
+.skin-nord .imeselector-menu::before{border-bottom-color:var(--line)}
+.skin-nord .imeselector-menu::after{border-bottom-color:var(--surface)}
+.skin-nord .imeselector-menu.ime-position-top::before{border-top-color:var(--line)}
+.skin-nord .imeselector-menu.ime-position-top::after{border-top-color:var(--surface)}
+:root:not([data-nord-theme="light"]) .skin-nord .tux-editor-copy-original-button{filter:invert(.85)}
+@media(max-width:650px){.skin-nord .tux-groupselector{max-width:calc(100vw - 24px);left:12px!important}.skin-nord .tux-groupselector__filter__search{max-width:65%}}
+.skin-nord .ext-translate-container .tux-messagelist .tux-message-proofread.own-translation,
+.skin-nord .ext-translate-container .tux-messagelist .tux-message-proofread.own-translation:hover{background:var(--surface)}
+.skin-nord .tux-messagelist .tux-message-pagemode .tux-pagemode-source,
+.skin-nord .tux-messagelist .tux-message-proofread .tux-proofread-source{color:var(--muted)}
+.skin-nord .uls-ime-menu-settings-item,
+.skin-nord .uls-ime-menu-settings-item>a:hover{background-color:var(--soft);color:var(--ink);border-color:var(--line)}
+.skin-nord .language-settings-dialog,
+.skin-nord #languagesettings-settings-panel,
+.skin-nord .uls-input-settings .uls-input-settings-inputmethods-list{background:var(--surface);color:var(--ink)}
+.skin-nord .languagesettings-menu .menu-section:is(.active,:hover){background-color:var(--soft);color:var(--ink)}
+.skin-nord .languagesettings-menu :is(h1,.menu-section),
+.skin-nord #languagesettings-settings-panel :is(h3,h4,.checkbox strong){color:var(--ink)}
+.skin-nord .languagesettings-menu .menu-section .settings-text,
+.skin-nord #languagesettings-settings-panel :is(p,label,.uls-input-settings-disable-info,.uls-input-settings-no-inputmethods){color:var(--muted)}
+.skin-nord .language-settings-buttons{border-color:var(--line)}
+.skin-nord .down+.uls-input-settings-caret{border-bottom-color:var(--surface)}
+.skin-nord .imeselector{background-image:none}
+.skin-nord .imeselector::before{content:'⌨';position:absolute;left:3px;top:2px;color:var(--muted);font-size:15px;line-height:18px}
+:root:not([data-nord-theme="light"]) .skin-nord :is(.uls-ime-more-settings-link,.uls-icon-close){filter:invert(.85)}
+.skin-nord .uls-font-item{background:var(--soft);border-color:var(--line)}
+.skin-nord .uls-sub-panel{border-color:var(--line)}
+.skin-nord .uls-font-label{color:var(--muted)}
+.skin-nord .uls-font-label strong{color:var(--ink)}
+@media(max-width:650px){
+ .skin-nord .grid .tux-message-editor .editcolumn{width:100%;padding-right:12px;border-right:0;transition:none}
+ .skin-nord .grid .tux-message-editor .tux-editor-titletools{margin-right:0}
+ .skin-nord .grid .tux-message-editor .infocolumn-block{position:relative;clear:both;width:100%;border-top:1px solid var(--line);transition:none}
+ .skin-nord .grid .tux-message-editor .infocolumn-block .infocolumn{position:static;width:auto;padding:8px 12px}
+ .skin-nord .tux-message-editor__caret{display:none}
+ .skin-nord .ext-translate-language-selector.ext-translate-language-selector{width:100%;float:none;text-align:left;margin:10px 0}
+ .skin-nord .ext-translate-target-language{white-space:nowrap}
+ .skin-nord .ext-translate-container .tux-action-bar{position:static;height:auto}
+}
+:root:not([data-nord-theme="light"]) .skin-nord .tux-grouplist__item__icon{filter:invert(.8)}
+@media(max-width:650px){
+ .skin-nord .grid .tux-message-editor .tux-editor-sourcemessage-container{padding-right:36px}
+ .skin-nord .grid .tux-message-editor .tux-editor-sourcemessage-container .tux-editor-copy-original-button{right:0}
+}

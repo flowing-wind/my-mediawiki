@@ -1,0 +1,126 @@
+{
+  "name": "Nord",
+  "version": "1.5.1",
+  "author": [
+    "Fuuraiko"
+  ],
+  "descriptionmsg": "nord-desc",
+  "license-name": "GPL-2.0-or-later",
+  "type": "skin",
+  "requires": {
+    "MediaWiki": ">= 1.46"
+  },
+  "ValidSkinNames": {
+    "nord": {
+      "class": "SkinMustache",
+      "args": [
+        {
+          "name": "nord",
+          "responsive": true,
+          "templateDirectory": "templates",
+          "scripts": [
+            "skins.nord.scripts"
+          ],
+          "styles": [
+            "skins.nord.styles",
+            "skins.nord.reading.v4"
+          ],
+          "menus": [
+            "user-page",
+            "user-interface-preferences",
+            "notifications",
+            "user-menu",
+            "associated-pages",
+            "views",
+            "actions",
+            "variants"
+          ],
+          "messages": [
+            "sitetitle",
+            "search",
+            "nord-subtitle",
+            "nord-explore",
+            "nord-contents",
+            "nord-top",
+            "nord-tools",
+            "nord-account",
+            "nord-theme",
+            "nord-menu",
+            "nord-reading",
+            "nord-skip",
+            "nord-journal",
+            "nord-close",
+            "nord-search-shortcut",
+            "nord-text-size",
+            "nord-size-small",
+            "nord-size-standard",
+            "nord-size-large",
+            "nord-hide-navigation",
+            "nord-show-navigation",
+            "nord-hide-contents",
+            "nord-dock-contents"
+          ]
+        }
+      ]
+    }
+  },
+  "MessagesDirs": {
+    "Nord": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "skins.nord.styles": {
+      "class": "MediaWiki\\ResourceLoader\\SkinModule",
+      "features": {
+        "normalize": true,
+        "elements": true,
+        "content-media": true,
+        "content-links": true,
+        "content-tables": true,
+        "interface": true,
+        "interface-category": true,
+        "i18n-ordered-lists": true,
+        "i18n-headings": true
+      },
+      "styles": [
+        "resources/nord.css",
+        "resources/footer.css",
+        "resources/sidebars.css"
+      ]
+    },
+    "skins.nord.scripts": {
+      "scripts": [
+        "resources/nord.js",
+        "resources/sidebars.js",
+        "resources/scroll-rails.js",
+        "resources/reading-links.js",
+        "resources/table-sorting.js",
+        "resources/search.js",
+        "resources/title-spacing.js"
+      ],
+      "dependencies": [
+        "mediawiki.util"
+      ],
+      "messages": [
+        "nord-hide-navigation",
+        "nord-show-navigation",
+        "nord-hide-contents",
+        "nord-dock-contents"
+      ]
+    },
+    "skins.nord.reading.v4": {
+      "styles": [
+        "resources/reading.css",
+        "resources/search.css",
+        "resources/system-forms.css",
+        "resources/visual-editor.css"
+      ]
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteSkinPath": "Nord"
+  },
+  "manifest_version": 2
+}

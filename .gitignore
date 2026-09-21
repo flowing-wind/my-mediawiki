@@ -1,0 +1,15 @@
+.codex/
+backups/
+private/
+public/w/
+runtime/
+uploads/
+LocalSettings.php
+**/LocalSettings.php
+config/environment.php
+*.sql
+*.sql.gz
+*.tar
+*.tar.gz
+*.pem
+

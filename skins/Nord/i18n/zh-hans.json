@@ -1,0 +1,30 @@
+{
+  "@metadata": {
+    "authors": [
+      "Fuuraiko"
+    ]
+  },
+  "skinname-nord": "Nord",
+  "nord-desc": "以北欧自然为灵感，独立、安静的阅读皮肤。",
+  "nord-subtitle": "We are made of star-stuff.",
+  "nord-explore": "探索",
+  "nord-contents": "本页目录",
+  "nord-top": "概览",
+  "nord-tools": "页面操作",
+  "nord-account": "账户",
+  "nord-theme": "切换明亮 / 深色外观",
+  "nord-menu": "打开导航",
+  "nord-close": "关闭导航",
+  "nord-reading": "Flowing Wind",
+  "nord-skip": "跳到正文",
+  "nord-journal": "In the vastness of space and the immensity of time, it is my joy to share a planet and an epoch with YOU.",
+  "nord-search-shortcut": "按 / 聚焦搜索框，按 Enter 搜索",
+  "nord-text-size": "文字大小",
+  "nord-size-small": "小",
+  "nord-size-standard": "标准",
+  "nord-size-large": "大",
+  "nord-hide-navigation": "收起导航",
+  "nord-show-navigation": "展开导航",
+  "nord-hide-contents": "收起目录",
+  "nord-dock-contents": "将目录固定在右侧"
+}

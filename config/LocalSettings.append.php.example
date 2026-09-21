@@ -1,0 +1,5 @@
+<?php
+// Append this one line to the installer-generated public/w/LocalSettings.php.
+// It resolves to <project>/config/bootstrap.php when core is in <project>/public/w.
+require dirname( __DIR__, 2 ) . '/config/bootstrap.php';
+

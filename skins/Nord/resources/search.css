@@ -1,0 +1,41 @@
+/* Search and reading controls share Nord surfaces and clear borders. */
+.nord-type-menu>summary{min-width:42px;min-height:36px;justify-content:center;padding:7px 12px}
+.skin-nord .nord-search{border:1px solid var(--line)}
+.skin-nord .nord-search:hover{border-color:var(--nord9)}
+.skin-nord #search{max-width:none}
+.skin-nord #mw-search-top-table{display:block;width:100%;max-width:none}
+.skin-nord #mw-search-top-table .oo-ui-fieldLayout{margin:0;width:100%}
+.skin-nord #mw-search-top-table .oo-ui-fieldLayout-header{display:none}
+.skin-nord #mw-search-top-table .oo-ui-fieldLayout-field{display:flex;align-items:stretch;gap:10px}
+.skin-nord #mw-search-top-table .oo-ui-actionFieldLayout-input{display:block;flex:1;min-width:0;width:auto;padding:0}
+.skin-nord #mw-search-top-table .oo-ui-actionFieldLayout-button{display:flex;flex:none;width:auto}
+.skin-nord #searchText{max-width:none;width:100%}
+.skin-nord #searchText input{height:46px;box-sizing:border-box;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:5px;font-size:17px;box-shadow:none}
+.skin-nord #searchText input:focus{border-color:var(--nord9);box-shadow:0 0 0 1px var(--nord9)}
+.skin-nord #mw-search-top-table button[type="submit"]{height:46px;min-height:46px;margin:0;padding:0 22px;background:var(--soft);color:var(--ink);border:1px solid var(--nord9);border-radius:5px;box-shadow:none;font-size:16px}
+.skin-nord #mw-search-top-table button[type="submit"]:hover{background:var(--line)}
+:root:not([data-nord-theme="light"]) .skin-nord #searchText>.oo-ui-iconElement-icon,:root:not([data-nord-theme="light"]) .skin-nord #searchText>.oo-ui-indicatorElement-indicator{filter:invert(1);opacity:.7}
+.nord-search-meta{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:14px 0 22px}
+.skin-nord .nord-search-meta .results-info{float:none;color:var(--muted);font-size:14px;margin:0;padding:0}
+.skin-nord .nord-search-meta .mw-indicator{font-size:14px;margin:0}
+.skin-nord .nord-search-meta .mw-helplink{display:inline-block;padding:4px 9px;border-radius:3px;background:none;color:var(--link);text-decoration:none}
+.skin-nord .nord-search-meta .mw-helplink:hover{background:var(--soft)}
+.skin-nord .nord-search-meta .mw-helplink-icon{display:none}
+.skin-nord .mw-search-profile-tabs{background:transparent;border:0;border-bottom:1px solid var(--line);padding:0;margin:0 0 26px}
+.skin-nord .mw-search-profile-tabs .search-types{float:none}
+.skin-nord .mw-search-profile-tabs ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0}
+.skin-nord .mw-search-profile-tabs li{float:none;margin:0;padding:0}
+.skin-nord .mw-search-profile-tabs a{display:block;padding:10px 12px;color:var(--muted);font-size:15px;text-decoration:none}
+.skin-nord .mw-search-profile-tabs .current a{color:var(--link);box-shadow:inset 0 -2px var(--nord9)}
+.skin-nord .mw-search-profile-tabs a:hover{background:var(--surface)}
+.skin-nord .mw-search-results{max-width:none;width:100%;margin:0;padding:0;list-style:none}
+.skin-nord .mw-search-results li{padding:22px 0;margin:0;border-bottom:1px solid var(--line)}
+.skin-nord .mw-search-result-heading{font-size:21px;line-height:1.5;margin-bottom:8px}
+.skin-nord .searchresult{color:var(--ink);font-size:var(--reading-size);line-height:1.8;max-width:75ch}
+.skin-nord .mw-search-result-data{color:var(--muted);font-size:14px;margin-top:10px}
+.skin-nord .searchmatch{background:var(--soft);color:var(--ink);box-shadow:inset 0 -2px var(--nord9);padding:1px 3px;border-radius:2px;font-weight:600}
+@media(max-width:480px){.skin-nord #mw-search-top-table button[type="submit"]{padding:0 12px}.nord-type-menu>summary{min-width:38px;padding:7px 10px}.skin-nord .mw-search-profile-tabs a{padding:8px;font-size:14px}}
+.skin-nord #mw-indicator-mw-helplink .mw-helplink-icon{display:none}
+.skin-nord .nord-body .mw-search-profile-tabs a,.skin-nord .nord-body .nord-search-meta a{text-decoration:none}
+.skin-nord .nord-body .mw-search-results li{width:100%;max-width:none}
+.skin-nord .nord-body .searchresult{width:auto;max-width:75ch}

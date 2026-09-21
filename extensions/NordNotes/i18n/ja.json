@@ -1,0 +1,20 @@
+{
+  "nordnotes-language-original": "原文の言語",
+  "nordnotes-language-none": "翻訳なし",
+  "nordnotes-language-related": "関連翻訳",
+  "nordnotes-language-independent": "独立版",
+  "nordnotes-language-current": "現在",
+  "nordnotes-language-manage": "翻訳管理",
+  "nordnotes-language-label": "記事の言語と翻訳",
+  "nordnotes-language-translating": "翻訳中",
+  "nordnotes-language-translated": "翻訳済み",
+  "nordnotes-language-proofreading": "校正待ち",
+  "nordnotes-language-reviewed": "校正済み",
+  "nordnotes-language-outdated": "翻訳中 · 原文更新あり",
+  "nordnotes-language-unassessed": "状態未設定",
+  "nordnotes-language-unmarked": "原文を保存し、翻訳対象として指定してください",
+  "nordnotes-language-related-help": "Translate で管理する関連翻訳",
+  "nordnotes-language-independent-help": "各言語版を個別に管理し、変更は同期しません",
+  "nordnotes-language-manual-status": "手動で管理する状態",
+  "nordnotes-newarticle-title": "New Article"
+}

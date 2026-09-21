@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Main Page",
+    "language": "en",
+    "text": "== Browse and maintain ==\nEach panel previews up to five entries. Select its heading to open the complete report. Empty reports display “None found.” Some maintenance reports are cached by MediaWiki and may update after a delay.\n\n<div id='nord-maintenance'>\n<div class=\"nord-report\" data-report=\"AllPages\">\n=== [[Special:AllPages|All pages]] ===\nBrowse article titles. The full report also lets you select a namespace.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"Categories\">\n=== [[Special:Categories|Categories]] ===\nBrowse the categories currently used in the wiki.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"Uncategorizedpages\">\n=== [[Special:Uncategorizedpages|Uncategorized pages]] ===\nFind articles that still need a category.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"Wantedpages\">\n=== [[Special:Wantedpages|Wanted pages]] ===\nFind links to pages that have not been created.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"BrokenRedirects\">\n=== [[Special:BrokenRedirects|Broken redirects]] ===\nFind aliases whose target does not exist.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"DoubleRedirects\">\n=== [[Special:DoubleRedirects|Double redirects]] ===\nFind redirect chains that should point directly to their final target.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"Lonelypages\">\n=== [[Special:Lonelypages|Lonely Pages]] ===\nFind articles without incoming links from other content pages.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n<div class=\"nord-report\" data-report=\"Deadendpages\">\n=== [[Special:Deadendpages|Dead-end pages]] ===\nFind articles without outgoing internal links.\n<div class=\"nord-report-results\">Loading preview… Open the heading for the complete report.</div>\n</div>\n</div>\n\n[[Special:RecentChanges|Recent changes]] · [[Special:Log|Logs]] · [[Special:SpecialPages|All special pages]]\n__NOTOC__\n[[Category:Main page]]"
+  },
+  {
+    "title": "FuuraikoWiki:Privacy policy",
+    "language": "en",
+    "text": "<div class=\"field-kicker\">Site information · Privacy policy</div>\nThis policy explains how FuuraikoWiki handles information when you read or use this personal knowledge wiki. It covers this wiki, not independently operated websites linked from it. Effective date: 20 September 2026.\n\n== Reading and server logs ==\nYou can read public pages without creating an account. Requests to the web server may be recorded in access and error logs. These records can include your IP address, request time, requested address, response status, browser user agent and referring address. They are used to operate the site, diagnose faults and investigate abuse. Log retention depends on the hosting configuration; this site does not promise a fixed deletion period.\n\n== Cookies and browser storage ==\nMediaWiki uses cookies for functions such as login sessions and security. Nord stores your theme, reading text size and sidebar-collapse preferences in your browser's local storage (the keys are <code>nord-theme</code>, <code>nord-text-size</code>, <code>nord-left-collapsed</code> and <code>nord-right-collapsed</code>). You can clear these using your browser's site-data settings; doing so may sign you out or reset preferences. Blocking essential cookies may prevent login or editing.\n\nNo advertising or third-party analytics integration is configured in the current wiki setup. This does not mean that the web server processes no technical information.\n\n== Accounts and contributions ==\nAnonymous editing and public self-registration are currently disabled. Authorized accounts may store a username, password hash, preferences and, if supplied, an email address. Email features are enabled in configuration; delivery depends on the mail service.\n\nSaved edits, edit summaries, usernames and revision timestamps are normally public in page histories. Discussion and user pages are also public. Do not submit passwords, private contact details or other confidential information. Deleting visible text does not necessarily remove earlier revisions, logs or backups; access to suppressed information depends on administrator permissions.\n\n== External services ==\nFollowing an external link sends you to another service with its own privacy practices. Embedded or remotely served resources, where used, can also cause requests to their providers. The footer license badge and Moe icon are served locally. Links to the Dashboard, licensing sites and registration sites do not make those services part of this policy.\n\n== Requests and changes ==\nFor questions, correction requests or privacy concerns, use the contact details linked from the [https://flowing-wind.space/ Flowing Wind Dashboard]. Include the relevant wiki page address, but avoid sending sensitive information unnecessarily. Requests are reviewed in light of technical constraints, public revision records and applicable obligations. This policy may be updated as site practices change; its revision history records changes.\n\nSee also: [[FuuraikoWiki:About|About]] · [[FuuraikoWiki:Disclaimers|Disclaimers]] · [[FuuraikoWiki:Copyrights|Copyrights]]."
+  },
+  {
+    "title": "FuuraikoWiki:About",
+    "language": "en",
+    "text": ""
+  },
+  {
+    "title": "FuuraikoWiki:Disclaimers",
+    "language": "en",
+    "text": "<div class=\"field-kicker\">Site information · Disclaimers</div>\nFuuraikoWiki contains personally compiled notes and materials shared for learning, discussion and general information. It is not an authoritative reference or a substitute for primary sources and professional advice.\n\n== Accuracy and use ==\nContent is provided as available, without a guarantee of completeness, accuracy, currency or fitness for a particular purpose. Notes, translations, calculations, code and examples may contain mistakes or omit assumptions. Verify important claims against original sources, and test examples in an appropriate environment before relying on them.\n\nNothing on this wiki is individualized medical, legal, financial or other professional advice. You are responsible for evaluating information and deciding how to use it. To the extent permitted by applicable law, the site maintainer disclaims liability for loss arising from reliance on the material. This statement does not exclude responsibilities that cannot lawfully be excluded.\n\n== Links and third-party material ==\nLinks and citations are provided for context and convenience. They do not imply endorsement or control of an external website. Third-party materials retain their own copyright and license terms; their appearance here is not a grant of unrestricted reuse rights.\n\n== Corrections ==\nIf you find an error, unclear attribution or a rights concern, please contact the maintainer through the contact details linked from the [https://flowing-wind.space/ Dashboard], with the page address and a description of the issue. Corrections may change the current text while earlier revisions remain in history.\n\nSee also: [[FuuraikoWiki:Copyrights|Copyrights]] · [[FuuraikoWiki:Privacy policy|Privacy policy]]."
+  },
+  {
+    "title": "FuuraikoWiki:Copyrights",
+    "language": "en",
+    "text": "<div class=\"field-kicker\">Site information · Copyrights</div>\n'''© 2026 Fuuraiko.''' Unless a page or item says otherwise, original copyrightable content on this wiki for which Fuuraiko controls the relevant rights is licensed under [https://creativecommons.org/licenses/by-nc/4.0/ Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)]. This notice concerns this wiki's content, not every site linked from it.\n\n== What the license permits ==\nYou may share and adapt covered material for noncommercial purposes, subject to the license. Provide appropriate credit, link to the license and indicate changes. Do not suggest that the author endorses your use, or add restrictions that prevent recipients from exercising the license permissions. The [https://creativecommons.org/licenses/by-nc/4.0/legalcode.en full legal text] governs; this page is a practical explanation.\n\nA useful credit identifies Fuuraiko, the page title, its URL, the license and any modifications. Linking to a permanent revision from View history can help identify the version you used. For example:\n<blockquote>Adapted from “Page title” by Fuuraiko, FuuraikoWiki (page URL / revision). Licensed under CC BY-NC 4.0. Changes: shortened and translated.</blockquote>\nFor commercial uses outside the license, contact the relevant rights holder for separate permission. Statutory exceptions and public-domain material do not require permission under this license.\n\n== Exceptions and earlier licenses ==\n* Quoted passages, third-party images, diagrams, datasets and other externally sourced material retain their own terms. Check the credit, file description and original source. Inclusion in this wiki does not automatically place them under CC BY-NC.\n* Material carrying a different license notice remains subject to that notice. The site-wide default cannot relicense rights held by someone else.\n* Earlier valid grants, including any CC BY-SA grant under which a version was already distributed, are not revoked by changing the current site default. Do not assume that older material can be made exclusively noncommercial retroactively. Third-party BY-SA material cannot simply be relabeled BY-NC.\n* MediaWiki, extensions and skin source code use their own software licenses. Nord's source code remains GPL-2.0-or-later. This content notice does not replace those licenses. Separately licensed code examples retain their stated terms.\n* Logos, trademarks, privacy and other non-copyright rights may require separate consideration. \n\n== Ownership and permission ==\nA copyright notice identifies ownership; a CC license grants specified permissions while ownership is retained. This wiki therefore uses a copyright notice together with CC BY-NC 4.0, without a blanket “All rights reserved” claim over licensed uses.\n\nFor a rights question, use the contact details linked from the [https://flowing-wind.space/ Dashboard]. See also [[FuuraikoWiki:Disclaimers|Disclaimers]]."
+  },
+  {
+    "title": "MediaWiki:Sidebar",
+    "language": "en",
+    "text": "* Navigation\n** Main Page|Main page\n** Special:RecentChanges|Recent changes\n** Special:Random|Random page\n** Special:SpecialPages|Special pages\n** FuuraikoWiki:About|About FuuraikoWiki\n* Collections\n** :Category:Electronics|Electronics\n** :Category:Astronomy|Astronomy\n** :Category:Library|Library\n* Quick Access\n** Special:NewArticle|New article\n** Special:Translate|Translate\n** Special:PageTranslation|Translation management\n** Special:ListFiles|File list\n** Special:UnusedFiles|Unused files\n** Special:NewFiles|Gallery of new files\n* TOOLBOX\n* LANGUAGES"
+  },
+  {
+    "title": "MediaWiki:Copyright-footer",
+    "language": "en",
+    "text": "Original content by Fuuraiko is available under $1 unless otherwise noted; third-party material retains its own terms."
+  },
+  {
+    "title": "MediaWiki:Disclaimerpage",
+    "language": "en",
+    "text": "FuuraikoWiki:Disclaimers"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-new",
+    "language": "en",
+    "text": "Translating"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-translated",
+    "language": "en",
+    "text": "Translated"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-proofreading",
+    "language": "en",
+    "text": "Awaiting proofreading"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-reviewed",
+    "language": "en",
+    "text": "Proofread"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-new/zh-hans",
+    "language": "zh-hans",
+    "text": "翻译中"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-translated/zh-hans",
+    "language": "zh-hans",
+    "text": "已翻译"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-proofreading/zh-hans",
+    "language": "zh-hans",
+    "text": "待校对"
+  },
+  {
+    "title": "MediaWiki:Translate-workflow-state-reviewed/zh-hans",
+    "language": "zh-hans",
+    "text": "已校对"
+  },
+  {
+    "title": "MediaWiki:Mainpage",
+    "language": "en",
+    "text": "Main Page"
+  },
+  {
+    "title": "MediaWiki:Mainpage/zh-hans",
+    "language": "zh-hans",
+    "text": "Main Page"
+  },
+  {
+    "title": "MediaWiki:Mainpage/ja",
+    "language": "ja",
+    "text": "Main Page"
+  },
+  {
+    "title": "Template:Article languages",
+    "language": "en",
+    "text": "<includeonly>{{#tag:nordlanguages||mode={{{mode|original}}}|source={{{source|zh-hans}}}|page={{{page|{{FULLPAGENAME}}}}}|targets={{{targets|}}}|links={{{links|}}}|states={{{states|}}}|other={{{other|}}}|other-language={{{other-language|en}}}}}</includeonly><noinclude>\n<templatedata>{\"description\":\"文章语言与翻译信息\",\"params\":{\"mode\":{\"label\":\"方式：original / related / independent\",\"type\":\"string\",\"default\":\"original\"},\"source\":{\"label\":\"原始语言代码（简体中文用 zh-hans）\",\"type\":\"string\",\"default\":\"zh-hans\"},\"page\":{\"label\":\"Translate 原文页面\",\"type\":\"wiki-page-name\"},\"targets\":{\"label\":\"计划翻译语言（逗号分隔；已有译文自动列出）\",\"type\":\"string\"},\"links\":{\"label\":\"独立版本：zh-hans:页面;ja:页面\",\"type\":\"string\"},\"states\":{\"label\":\"独立版本手动状态：zh-hans:reviewed;ja:translating\",\"type\":\"string\"},\"other\":{\"label\":\"单个独立版本（兼容旧用法）\",\"type\":\"wiki-page-name\"},\"other-language\":{\"label\":\"独立版本语言代码\",\"type\":\"string\"}},\"format\":\"block\"}</templatedata></noinclude>"
+  },
+  {
+    "title": "Template:See also",
+    "language": "en",
+    "text": "<includeonly>\n== {{{title|See also}}} ==\n{{{1|}}}\n</includeonly><noinclude>用法：<nowiki>{{See also|1=\n* [[其他条目]]\n}}</nowiki>。title 参数可以改成“参见”。</noinclude>"
+  },
+  {
+    "title": "Template:References",
+    "language": "en",
+    "text": "<includeonly>\n== {{{title|References}}} ==\n<references />\n</includeonly><noinclude>在正文中使用 ref 引用，然后在末尾加入 <nowiki>{{References}}</nowiki>。title 参数可以改成“参考文献”。</noinclude>"
+  },
+  {
+    "title": "Template:Article starter",
+    "language": "en",
+    "text": "{{Article languages|mode=original|source=en}}\n\n== Overview ==\n\n== Explanation ==\n\n{{See also|1=}}\n{{References}}"
+  },
+  {
+    "title": "Template:Translate article starter",
+    "language": "en",
+    "text": "{{Article languages|mode=related|source=en|page={{FULLPAGENAME}}|targets=zh-hans}}\n<languages />\n<translate>\n== Overview ==\n\n== Explanation ==\n</translate>\n{{See also|1=}}\n{{References}}"
+  },
+  {
+    "title": "Category:Electronics",
+    "language": "en",
+    "text": ""
+  },
+  {
+    "title": "Category:Astronomy",
+    "language": "en",
+    "text": ""
+  },
+  {
+    "title": "Category:Library",
+    "language": "en",
+    "text": ""
+  },
+  {
+    "title": "Category:Main page",
+    "language": "en",
+    "text": ""
+  }
+]

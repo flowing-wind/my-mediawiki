@@ -1,0 +1,68 @@
+{
+  "name": "NordNotes",
+  "version": "0.3.2",
+  "author": "Fuuraiko",
+  "license-name": "GPL-2.0-or-later",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.46",
+    "extensions": {
+      "Translate": "*"
+    }
+  },
+  "AutoloadClasses": {
+    "NordNotesHooks": "Hooks.php",
+    "SpecialNewArticle": "SpecialNewArticle.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": "NordNotesHooks::onParserFirstCallInit",
+    "BeforePageDisplay": "NordNotesHooks::onBeforePageDisplay",
+    "EditFormPreloadText": "NordNotesHooks::onEditFormPreloadText",
+    "PageSaveComplete": "NordNotesHooks::onPageSaveComplete"
+  },
+  "MessagesDirs": {
+    "NordNotes": [
+      "i18n"
+    ]
+  },
+  "ResourceModules": {
+    "ext.nordNotes": {
+      "styles": [
+        "resources/notes.css",
+        "resources/translate.css"
+      ]
+    },
+    "ext.nordNotes.discovery": {
+      "scripts": [
+        "resources/discovery.js"
+      ],
+      "styles": [
+        "resources/discovery.css"
+      ],
+      "dependencies": [
+        "mediawiki.api",
+        "mediawiki.util"
+      ]
+    },
+    "ext.nordNotes.dashboard": {
+      "scripts": [
+        "resources/dashboard.js"
+      ],
+      "styles": [
+        "resources/dashboard.css"
+      ],
+      "dependencies": [
+        "mediawiki.api",
+        "mediawiki.util"
+      ]
+    }
+  },
+  "manifest_version": 2,
+  "ResourceFileModulePaths": {
+    "localBasePath": "",
+    "remoteExtPath": "NordNotes"
+  },
+  "SpecialPages": {
+    "NewArticle": "SpecialNewArticle"
+  }
+}

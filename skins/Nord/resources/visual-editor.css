@@ -1,0 +1,48 @@
+/* VisualEditor/OOUI tokens share Nord's live light/dark palette. */
+html:root{
+ --color-base--hover:var(--ink);--color-base--subtle:var(--muted);--color-disabled:var(--muted);
+ --color-progressive--hover:var(--link);--color-progressive--active:var(--link);--color-progressive--focus:var(--link);
+ --color-destructive:var(--nord11);--color-destructive--hover:var(--nord11);--color-destructive--active:var(--nord11);--color-destructive--focus:var(--nord11);--color-error:var(--nord11);--color-success:var(--nord14);
+ --background-color-disabled:var(--soft);--background-color-disabled-subtle:var(--surface);
+ --background-color-button-quiet--hover:var(--soft);--background-color-button-quiet--active:var(--soft);--background-color-interactive-subtle--hover:var(--soft);
+ --background-color-progressive--hover:var(--nord9);--background-color-progressive--active:var(--nord10);--background-color-progressive--focus:var(--nord10);
+ --background-color-progressive-subtle:var(--soft);--background-color-progressive-subtle--hover:var(--soft);--background-color-progressive-subtle--active:var(--soft);
+ --background-color-destructive-subtle:color-mix(in srgb,var(--nord11) 16%,var(--paper));--background-color-destructive-subtle--hover:var(--soft);--background-color-destructive-subtle--active:var(--soft);
+ --background-color-error-subtle:color-mix(in srgb,var(--nord11) 16%,var(--paper));--background-color-warning-subtle:color-mix(in srgb,var(--nord13) 16%,var(--paper));--background-color-success-subtle:color-mix(in srgb,var(--nord14) 16%,var(--paper));--background-color-notice-subtle:var(--surface);
+ --border-color-disabled:var(--line);--border-color-interactive:var(--line);--border-color-interactive--hover:var(--nord9);--border-color-interactive--active:var(--nord9);--border-color-input--hover:var(--nord9);--border-color-input-binary:var(--line);--border-color-input-binary--checked:var(--nord9);--border-color-input-binary--active:var(--nord9);
+ --border-color-progressive:var(--nord9);--border-color-progressive--hover:var(--nord9);--border-color-progressive--active:var(--nord9);--border-color-progressive--focus:var(--nord9);--border-color-error:var(--nord11);--border-color-destructive:var(--nord11);--border-color-destructive--hover:var(--nord11);--border-color-destructive--active:var(--nord11);--border-color-warning:var(--nord13);--border-color-success:var(--nord14);--border-color-notice:var(--line);
+ --box-shadow-color-progressive--focus:var(--nord9);--box-shadow-color-progressive--active:var(--nord9);--box-shadow-color-destructive--focus:var(--nord11);
+ --background-color-backdrop-light:rgba(30,36,46,.62);
+}
+html[data-nord-theme="light"]{--background-color-backdrop-light:rgba(46,52,64,.3);--color-error:#9c3f49;--color-destructive:#9c3f49;--color-success:#436638}
+/* The toolbar stays below Nord's header; modal windows cover both sidebars. */
+.skin-nord .ve-ui-toolbar>.oo-ui-toolbar-bar{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.skin-nord .ve-ui-overlay-global{z-index:110}
+.skin-nord .ve-ui-toolbar :is(.oo-ui-tool-link,.oo-ui-popupToolGroup-handle){color:var(--ink);text-decoration:none}
+.skin-nord .ve-ui-toolbar .oo-ui-toolGroup-tools{border-color:var(--line)}
+.skin-nord .ve-ui-toolbar :is(.oo-ui-tool-active,.oo-ui-popupToolGroup-active){background:var(--soft)}
+.skin-nord .ve-ui-toolbar .oo-ui-widget-disabled{opacity:.5}
+.skin-nord .ve-ui-toolbar .oo-ui-widget-disabled .oo-ui-iconElement-icon{opacity:1}
+.skin-nord .ve-ui-surface{color:var(--ink)}
+.skin-nord .ve-ce-documentNode{caret-color:var(--ink)}
+.skin-nord :is(.ve-ui-mwSaveDialog-options,.ve-ui-mwSaveDialog-summary,.ve-ui-mwTransclusionOutlineControlsWidget,.ve-ui-mwTransclusionOutlineWidget){background:var(--surface);border-color:var(--line);color:var(--ink)}
+.skin-nord :is(.oo-ui-processDialog-head,.oo-ui-processDialog-foot,.oo-ui-messageDialog-actions,.oo-ui-outlineControlsWidget){background:var(--surface);color:var(--ink);border-color:var(--line)}
+.skin-nord :is(.oo-ui-outlineOptionWidget,.oo-ui-decoratedOptionWidget,.oo-ui-tool-title){color:var(--ink)}
+.skin-nord :is(.oo-ui-outlineOptionWidget-selected,.oo-ui-outlineOptionWidget-highlighted){background:var(--soft)}
+.skin-nord .ve-ui-mwSaveDialog .ve-ui-diffElement{background:var(--paper);color:var(--ink)}
+/* Do not let reading-link decoration leak into editor controls. */
+.skin-nord :is(.ve-ui-toolbar,.ve-ui-overlay,.oo-ui-window) a{border-bottom:0;text-shadow:none}
+@media(max-width:850px){.ve-active .skin-nord .nord-topbar{height:79px}.skin-nord .ve-ui-toolbar{font-size:14px}}
+.skin-nord .ve-ui-mwLatexDialog-content .oo-ui-bookletLayout-stackLayout h3{color:var(--muted)}
+.skin-nord .ve-ui-mwLatexDialog-menuLayout>.oo-ui-menuLayout-content{border-color:var(--line)}
+:root:not([data-nord-theme="light"]) .skin-nord .ve-ui-mwLatexDialog-symbol.skin-invert{filter:invert(1) hue-rotate(180deg)}
+.skin-nord .ve-ui-symbolListPage-symbol{border-color:var(--line)}
+.skin-nord .ve-ui-symbolListPage-symbol:hover{background-color:var(--soft)}
+html .skin-nord .ve-ui-tableLineContext>.oo-ui-iconWidget.oo-ui-iconElement.oo-ui-iconElement-icon{background-color:var(--soft);border:1px solid var(--nord9);filter:none;opacity:1}
+.skin-nord .ve-ui-surface-placeholder{color:var(--muted);opacity:1}
+
+.skin-nord .ve-ui-toolbar-floating>.oo-ui-toolbar-bar{top:79px;z-index:26}
+html .skin-nord :is(.ve-ui-overlay,.oo-ui-window) :is(h1,h2,h3,h4,h5,h6){color:var(--ink);border-color:var(--line)}
+/* VE applies important inline-diff fills; keep their add/remove semantics in Nord. */
+html .skin-nord .ve-ui-diffElement [data-diff-action="insert"],html .skin-nord .ve-ui-diffElement ins{background-color:var(--background-color-success-subtle)!important;color:var(--ink)}
+html .skin-nord .ve-ui-diffElement [data-diff-action="remove"],html .skin-nord .ve-ui-diffElement del{background-color:var(--background-color-error-subtle)!important;color:var(--ink)}

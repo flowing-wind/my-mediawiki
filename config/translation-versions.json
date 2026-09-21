@@ -1,0 +1,7 @@
+{
+  "mediawiki": "1.46.0",
+  "Translate": {"repository":"https://gerrit.wikimedia.org/r/mediawiki/extensions/Translate","branch":"REL1_46","commit":"d924d7ef89ff1ee10838da4a27d64327ef27087b"},
+  "UniversalLanguageSelector": {"repository":"https://gerrit.wikimedia.org/r/mediawiki/extensions/UniversalLanguageSelector","branch":"REL1_46","commit":"46e2145ef5ff826a4d58b426b569c72d64104aab"},
+  "bundledExtensions": ["ParserFunctions","InputBox","TemplateData","Cite","VisualEditor"],
+  "localExtension": "extensions/NordNotes"
+}
